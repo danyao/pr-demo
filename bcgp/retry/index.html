@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" content="#c62828">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Pay Payment Request Demo</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js"></script>
+  </head>  
+  <body>
+    <h1>retry() test for {basic-card, GPay-v2}</h1>
+    
+    <p>
+      This page is a test of PaymentResponse.retry() in {basic-card, GPay} hybrid requests.
+      No money will be charged.
+    </p>
+    <p>
+      This test also sets the following parameters:
+    </p>
+    <ul>
+      <li>emailRequired</li>
+      <li>shippingAddressRequired</li>
+      <li>billingAddressRequired</li>
+    </ul>
+    
+    <p>
+      Price: $50 USD
+    </p>
+    <button id="buy" onclick="buy()">
+      Buy
+    </button>
+    <div id="can"></div>
+    <div id="has"></div>
+    <a href="/">Home</a>
+    <pre id="response" class="good"></pre>
+    <pre id="error" class="bad"></pre>
+    
+    <script>onload();</script>
+    
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

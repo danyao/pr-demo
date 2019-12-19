@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Google Pay and Android Pay Payment Request Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="script.js"></script>
+  </head>  
+  <body>
+    <h1>Google Pay + Android Pay Test</h1>
+    
+    <p>
+      This page is a test of Google Pay and Android Pay integration using Payment Request API.
+      No money will be charged.
+    </p>
+    
+    <p>
+      Price: $50 USD
+    </p>
+    <button id="buy" onclick="buy()">
+      Buy
+    </button>
+    <div id="can"></div>
+    <div id="has"></div>
+    <pre id="response" class="good"></pre>
+    
+    <script>onload();</script>
+    
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>

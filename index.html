@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment Request Test Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>  
+  <body>
+    <h1>Payment Request Test Page</h1>
+    
+    <ul>
+      <li><a href="bc/index.html">Basic-card</a></li>
+      <li><a href="addr-event/index.html">Basic-card with OnShippingAddressChange</a></li>
+      <li>Google Pay
+        <ul>
+          <li><a href="gp/v1/index.html">GPay API v1</a></li>
+          <li><a href="gp/v2/index.html">GPay API v2</a></li>
+          <li><a href="gp/apgp/index.html">GPay and Android Pay</a></li>
+          <li><a href="gp/retry/index.html">GPay with retry()</a></li>
+        </ul>
+      </li>
+      <li>Google Pay + Basic-Card
+        <ul>
+          <li><a href="bcgp/v1/index.html">GPay v1 + basic-card</a></li>
+          <li><a href="bcgp/v2/index.html">GPay v2 + basic-card</a></li>
+          <li><a href="bcgp/retry/index.html">retry() for GPay v2 + basic-card</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
